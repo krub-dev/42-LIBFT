@@ -5,6 +5,7 @@ desde la manipulación de cadenas hasta la conversión de tipos de datos y la ge
 ofreciendo una alternativa robusta y extensible a las funciones estándar de la biblioteca C.
 
 CARACTERÍSTICAS PRINCIPALES
+
 Manipulación de Cadena: Funciones para trabajar con cadenas de caracteres, incluyendo copias, concatenaciones, truncamientos, y verificaciones de caracteres.
 Conversión de Datos: Funciones para convertir entre diferentes tipos de datos, como enteros a cadenas y viceversa.
 Gestión de Memoria: Funciones para gestionar dinámicamente la memoria, como asignaciones, liberaciones, y copias de memoria.
