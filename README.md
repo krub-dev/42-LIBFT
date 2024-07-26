@@ -1,4 +1,5 @@
 Proyecto: LIBFT
+[Doc_LIBFT_Frubio-i.pdf](https://github.com/user-attachments/files/16397240/Doc_LIBFT_Frubio-i.pdf)
 
 Este proyecto consiste en desarrollar una librería en C, LIBFT, que proporciona una serie de funciones de utilidad para facilitar el desarrollo de programas en C. Estas funciones cubren una amplia gama de operaciones comunes, 
 desde la manipulación de cadenas hasta la conversión de tipos de datos y la gestión de memoria. La librería está diseñada para ser modular y fácilmente integrable en proyectos de C, 
