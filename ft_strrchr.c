@@ -6,7 +6,7 @@
 /*   By: frubio-i <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 10:57:01 by frubio-i          #+#    #+#             */
-/*   Updated: 2024/07/21 12:55:51 by frubio-i         ###   ########.fr       */
+/*   Updated: 2024/12/21 22:47:57 by frubio-i         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,19 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	int		i;
-	char	ch;
 
-	ch = (char)c;
+	if (!s)
+		return (NULL);
 	i = ft_strlen(s);
 	while (i >= 0)
 	{
-		if (s[i] == ch)
+		if (s[i] == (char) c)
 			return ((char *)&s[i]);
 		i--;
 	}
-	if (s[i] == ch)
-		return ((char *)&s[i]);
-	return (0);
+	return (NULL);
 }
+
 /*
 int	main(void)
 {

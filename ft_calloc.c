@@ -6,7 +6,7 @@
 /*   By: frubio-i <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 11:43:50 by frubio-i          #+#    #+#             */
-/*   Updated: 2024/07/21 13:06:33 by frubio-i         ###   ########.fr       */
+/*   Updated: 2024/12/21 22:47:43 by frubio-i         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,16 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*ptr;
 	size_t	btotal;
 
+	if (size != 0 && count > ((size_t) -1 / size))
+		return (NULL);
 	btotal = count * size;
-	ptr = (void *)malloc(btotal);
+	ptr = (void *)malloc(btotal * sizeof(void));
 	if (!ptr)
 		return (NULL);
-	ft_bzero (ptr, btotal);
+	ft_bzero(ptr, btotal);
 	return (ptr);
 }
+
 /*
 int	main(void)
 {
